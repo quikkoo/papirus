@@ -1,0 +1,18 @@
+FROM debian:jessie
+
+MAINTAINER Tharcísio Angelo <tharcisio.angelo@yahoo.com.br>
+
+ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+ENV TARGET=file:///root
+
+RUN \
+  apt-get update         && \
+  apt-get install -y        \
+    curl                    \
+    openjdk-7-jre           \
+    unzip                && \
+  rm -rf /var/cache/apt  && \
+  rm -rf /var/lib/apt/lists
+
+COPY ["*.sh", "/root/"]
+WORKDIR /root
