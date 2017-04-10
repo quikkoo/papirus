@@ -43,7 +43,7 @@ set -e
 TOOL=$1
 VERSION=$2
 
-TARGET=${TARGET:-"https://github.com/quikkoo/papirus"}
+TARGET=${TARGET:-"https://raw.githubusercontent.com/quikkoo/papirus/master"}
 
 echo "fetching $TOOL version $VERSION"
 curl -sSL "$TARGET/$TOOL.sh" | sh -s "$VERSION"

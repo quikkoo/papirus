@@ -25,16 +25,16 @@ You can run the script directly from github
 
 ```sh
 # running the main script as root
-curl -sSL https://github.com/quikkoo/papirus/papirus.sh | sh -s go 1.7.1
+curl -sSL https://raw.githubusercontent.com/quikkoo/papirus/master/papirus.sh | sh -s go 1.7.1
 
 # running the main script as normal user
-curl -sSL https://github.com/quikkoo/papirus/papirus.sh | sudo sh -s go 1.7.1
+curl -sSL https://raw.githubusercontent.com/quikkoo/papirus/master/papirus.sh | sudo sh -s go 1.7.1
 
 # running the specific script as root
-curl -sSL https://github.com/quikkoo/papirus/scala.sh | sh -s 2.12.0
+curl -sSL https://raw.githubusercontent.com/quikkoo/papirus/master/scala.sh | sh -s 2.12.0
 
 # running the specific script as normal user
-curl -sSL https://github.com/quikkoo/papirus/scala.sh | sudo sh -s 2.12.0
+curl -sSL https://raw.githubusercontent.com/quikkoo/papirus/master/scala.sh | sudo sh -s 2.12.0
 ```
 
 Sometimes you'll need to rewrite the installation script, in that case, you must
