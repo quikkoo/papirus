@@ -75,6 +75,11 @@ You must have installed:
 So, just type:
 
 ```sh
+# choose an operational system
+# options: centos, debian
+export OS=debian
+
+# run the makefile
 make test
 ```
 
